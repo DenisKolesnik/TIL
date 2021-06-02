@@ -1,6 +1,6 @@
 # Get Image Script
 
-###Script that takes access_token and pass it to to get image
+### Script that takes access_token and pass it to to get image
 
 arguments: 
 
