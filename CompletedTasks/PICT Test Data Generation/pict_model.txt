@@ -1,0 +1,111 @@
+Application Type: Web, Mobile Native, Hybrid
+Mobile Platform: iOS, Android, NA
+Browser: Chrome, Firefox, Safari, NA
+
+Programming Language: Java, JS, Python, Swift, C#
+Unit Framework: TestNG, JUnit, Mocha, Jest, Jasmine, PyTest, Unittest, Nose2, NA
+
+Web Frameworks: Selenide, Serenity, WebdriverIO, Cypress, CodeceptJS, Puppeteer, Playwrite, Helium, NA
+
+Mobile Frameworks: Appium, Espresso, XCUITest, Detox, Xamarin, NA
+Infrastructure: Selenium Grid, Selenoid
+
+
+
+#Languages
+ if [Programming Language] = "Java" then [Unit Framework] in {"TestNG", "JUnit"};
+
+ if [Programming Language] = "JS" then [Unit Framework] in {"Mocha", "Jest", "Jasmine"};
+
+ if [Programming Language] = "Python" then [Unit Framework] in {"PyTest", "Unittest", "Nose2"};
+
+ if [Programming Language] = "Swift" then [Unit Framework] = "NA" AND [Mobile Platform] = "iOS";
+
+ if [Programming Language] = "C#" then [Unit Framework] = "NA";
+
+
+
+
+
+#main
+
+if [Application Type] = "Web" then [Mobile Platform] = "NA" AND [Browser] <> "NA" AND [Programming Language] in {"Java", "JS", "Python", "C#"} AND [Mobile Frameworks] = "NA";
+
+
+if [Application Type] = "Mobile Native" then [Mobile Platform] <> "NA" AND [Browser] = "NA" AND [Web Frameworks] = "NA";
+
+if [Application Type] = "Hybrid" then [Mobile Platform] <> "NA" AND [Browser] = "NA" AND [Web Frameworks] = "NA";
+
+
+#WEB FR
+
+if [Web Frameworks] = "Selenide" then 
+[Application Type] = "Web" AND 
+[Mobile Platform] = "NA" AND 
+[Programming Language] = "Java" AND 
+[Unit Framework] in {"TestNG", "JUnit"} AND
+[Mobile Frameworks] = "NA";
+
+
+if [Web Frameworks] = "Serenity" then 
+[Application Type] = "Web" AND 
+[Mobile Platform] = "NA" AND 
+[Programming Language] = "C#" AND 
+[Unit Framework] = "NA" AND
+[Mobile Frameworks] = "NA";
+
+if [Web Frameworks] in {"WebdriverIO", "Cypress", "CodeceptJS", "Puppeteer", "Playwrite"} then 
+[Application Type] = "Web" AND 
+[Mobile Platform] = "NA" AND 
+[Programming Language] = "JS" AND 
+[Unit Framework] in {"Mocha", "Jest", "Jasmine"} AND
+[Mobile Frameworks] = "NA";
+
+if [Web Frameworks] = "Helium" then 
+[Application Type] = "Web" AND 
+[Mobile Platform] = "NA" AND 
+[Programming Language] = "Python" AND 
+[Unit Framework] in {"PyTest", "Unittest", "Nose2"} AND
+[Mobile Frameworks] = "NA";
+
+
+
+#MOBILE FR
+
+if [Mobile Frameworks] = "Appium" then 
+[Application Type] = "Mobile Native" AND 
+[Browser] = "NA" AND
+[Web Frameworks] = "NA";
+
+if [Mobile Frameworks] = "Espresso" then 
+[Application Type] = "Mobile Native" AND 
+[Mobile Platform] = "Android" AND
+[Browser] = "NA" AND
+[Programming Language] = "Java" AND
+[Unit Framework] in {"TestNG", "JUnit"} AND
+[Web Frameworks] = "NA";
+
+if [Mobile Frameworks] = "XCUITest" then 
+[Application Type] = "Mobile Native" AND 
+[Mobile Platform] = "iOS" AND
+[Browser] = "NA" AND
+[Programming Language] = "Swift" AND
+[Unit Framework] = "NA" AND
+[Web Frameworks] = "NA";
+
+if [Mobile Frameworks] = "Detox" then 
+[Application Type] = "Mobile Native" AND 
+[Mobile Platform] in{"iOS", "Android"} AND
+[Browser] = "NA" AND
+[Programming Language] = "JS" AND
+[Unit Framework] in {"Mocha", "Jest", "Jasmine"} AND
+[Web Frameworks] = "NA";
+
+
+if [Mobile Frameworks] = "Xamarin" then 
+[Application Type] = "Hybrid" AND 
+[Mobile Platform] in{"iOS", "Android"} AND
+[Browser] = "NA" AND
+[Programming Language] = "C#" AND
+[Unit Framework] = "NA" AND
+[Web Frameworks] = "NA";

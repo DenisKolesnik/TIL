@@ -1,0 +1,66 @@
+Application Type	Mobile Platform	Browser	Programming Language	Unit Framework	Web Frameworks	Mobile Frameworks	Infrastructure
+Web	NA	Safari	C#	NA	NA	NA	Selenium Grid
+Web	NA	Chrome	JS	Mocha	Puppeteer	NA	Selenoid
+Mobile Native	Android	NA	Python	PyTest	NA	Appium	Selenium Grid
+Hybrid	iOS	NA	Python	Unittest	NA	NA	Selenoid
+Mobile Native	Android	NA	Java	TestNG	NA	Espresso	Selenoid
+Web	NA	Firefox	C#	NA	Serenity	NA	Selenoid
+Web	NA	Safari	JS	Jasmine	WebdriverIO	NA	Selenoid
+Web	NA	Chrome	JS	Jest	CodeceptJS	NA	Selenium Grid
+Mobile Native	iOS	NA	JS	Jasmine	NA	Detox	Selenium Grid
+Web	NA	Firefox	JS	Jest	Cypress	NA	Selenium Grid
+Web	NA	Chrome	JS	Jasmine	Playwrite	NA	Selenium Grid
+Web	NA	Chrome	Python	Nose2	Helium	NA	Selenium Grid
+Web	NA	Safari	Python	PyTest	Helium	NA	Selenoid
+Hybrid	Android	NA	C#	NA	NA	Xamarin	Selenium Grid
+Web	NA	Safari	JS	Mocha	WebdriverIO	NA	Selenium Grid
+Web	NA	Chrome	C#	NA	NA	NA	Selenoid
+Web	NA	Firefox	Java	JUnit	Selenide	NA	Selenoid
+Web	NA	Firefox	Python	Unittest	Helium	NA	Selenium Grid
+Web	NA	Firefox	JS	Jasmine	CodeceptJS	NA	Selenoid
+Web	NA	Firefox	JS	Mocha	Playwrite	NA	Selenoid
+Web	NA	Firefox	Java	TestNG	Selenide	NA	Selenium Grid
+Web	NA	Chrome	Java	TestNG	Selenide	NA	Selenoid
+Web	NA	Safari	JS	Jest	Playwrite	NA	Selenoid
+Hybrid	iOS	NA	Java	TestNG	NA	NA	Selenoid
+Mobile Native	Android	NA	Java	JUnit	NA	Espresso	Selenium Grid
+Web	NA	Safari	Python	Unittest	NA	NA	Selenoid
+Mobile Native	Android	NA	JS	Mocha	NA	Detox	Selenoid
+Web	NA	Firefox	Python	Nose2	NA	NA	Selenoid
+Mobile Native	iOS	NA	Python	Unittest	NA	Appium	Selenoid
+Mobile Native	Android	NA	JS	Jasmine	NA	Appium	Selenoid
+Web	NA	Safari	C#	NA	Serenity	NA	Selenium Grid
+Web	NA	Safari	Java	JUnit	Selenide	NA	Selenoid
+Hybrid	iOS	NA	Python	PyTest	NA	NA	Selenoid
+Web	NA	Chrome	Python	PyTest	NA	NA	Selenoid
+Mobile Native	iOS	NA	Python	Nose2	NA	Appium	Selenoid
+Web	NA	Chrome	JS	Mocha	Cypress	NA	Selenoid
+Mobile Native	iOS	NA	JS	Jest	NA	Appium	Selenium Grid
+Web	NA	Safari	JS	Jasmine	Cypress	NA	Selenoid
+Mobile Native	iOS	NA	Swift	NA	NA	XCUITest	Selenoid
+Web	NA	Chrome	JS	Jest	WebdriverIO	NA	Selenium Grid
+Mobile Native	Android	NA	JS	Jest	NA	Detox	Selenium Grid
+Web	NA	Safari	Python	Nose2	Helium	NA	Selenium Grid
+Web	NA	Safari	JS	Jasmine	Puppeteer	NA	Selenium Grid
+Hybrid	Android	NA	Python	Nose2	NA	NA	Selenium Grid
+Web	NA	Chrome	C#	NA	Serenity	NA	Selenium Grid
+Hybrid	Android	NA	JS	Jasmine	NA	NA	Selenium Grid
+Mobile Native	iOS	NA	C#	NA	NA	Appium	Selenoid
+Web	NA	Safari	Java	TestNG	NA	NA	Selenium Grid
+Mobile Native	Android	NA	Python	Unittest	NA	NA	Selenium Grid
+Mobile Native	iOS	NA	Java	JUnit	NA	Appium	Selenoid
+Web	NA	Firefox	Python	PyTest	NA	NA	Selenium Grid
+Hybrid	Android	NA	JS	Jest	NA	NA	Selenium Grid
+Web	NA	Firefox	JS	Jest	Puppeteer	NA	Selenium Grid
+Web	NA	Firefox	JS	Mocha	WebdriverIO	NA	Selenium Grid
+Mobile Native	iOS	NA	Swift	NA	NA	Appium	Selenium Grid
+Web	NA	Chrome	Python	Unittest	Helium	NA	Selenoid
+Mobile Native	iOS	NA	Java	TestNG	NA	Appium	Selenoid
+Mobile Native	iOS	NA	Swift	NA	NA	XCUITest	Selenium Grid
+Hybrid	iOS	NA	JS	Mocha	NA	NA	Selenoid
+Web	NA	Safari	JS	Mocha	CodeceptJS	NA	Selenoid
+Mobile Native	Android	NA	JS	Mocha	NA	Appium	Selenium Grid
+Hybrid	iOS	NA	C#	NA	NA	Xamarin	Selenoid
+Web	NA	Chrome	Java	JUnit	NA	NA	Selenoid
+Hybrid	iOS	NA	Swift	NA	NA	NA	Selenium Grid
+Hybrid	Android	NA	Java	JUnit	NA	NA	Selenoid
